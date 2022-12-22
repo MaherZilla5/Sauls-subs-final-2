@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>Gallery - Saul's Subs</title>
+
+</head>
+
+<body>
+
+
+<header>
+<img src="images/logo.jpg" alt="Description of image" width="100px" height="100px">
+<h1>Our Gallery</h1>
+</header>
+<nav></nav>
+<main>
+
+<div id = "gridBox">
+
+<div>
+<img src = "images/meatBallSub.jpg" alt = "Picture Of Meatball Sub>"
+</div>
+
+
+</div>
+
+
+
+</main>
+<footer></footer>
+
+
+
+</body>
+
+</html>

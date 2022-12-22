@@ -1,0 +1,179 @@
+<!doctype html>
+
+<style type = "text/css">
+
+#mainForm{
+background-color: #F9F6EE;
+color: #800000;
+
+padding: 20px;
+border-radius: 10px;
+border: solid;
+border-color: black;
+
+
+}
+body {
+   background-color: #800000;
+   height: 100%;
+
+}
+.wordColor{
+   color: #F9F6EE;
+text-align: center;
+}
+input{
+   border-color: #800000;
+}
+#id1{
+background-color: grey;
+color: white;
+
+
+}
+nav {
+display: flex;
+justify-content: center;
+color: #F9F6EE;
+padding: 5px;
+width: 80%;
+margin-left: 10%;
+font-weight: bold;
+}
+nav ul {
+list-style: none;
+}
+nav ul li {
+float: left;
+padding: 5px;
+}
+nav ul li a:link, nav ul li a:visited {
+display: block;
+width: 150px;
+margin-right: 4px;
+color: #000000;
+padding: 2px 4px 2px 4px;
+background-color: #ffffff;
+text-decoration: none;
+}
+nav ul li a:hover {
+color: #ffffff;
+background-color: #9b30ff;
+}
+
+</style>
+
+<html>
+
+<head>
+
+<title>Sauls Sandwitche's Contact Us</title>
+ <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+
+<body>
+
+
+<header>
+<img src="images/saulsSubs.jpg" alt="Description of image" class = "imgClass">
+
+<h1 class = "wordColor">Contact Saul's Sandwitches</h1>
+</header>
+<nav>
+<ul>
+<li><a href = "index.html">Home</a></li>
+<li><a href = "menu.html">Menu</a></li>
+
+<li><a href="history.html">History</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href = "chef.html">Meet Chef</a></li>
+<li><a href = "aboutus.html">About Us</a></li>
+<li><a href = "gallery.html">Gallery</a></li>
+
+</ul>
+
+
+</nav>
+<main>
+<h2 class = "wordColor">Tell Us What You Think!</h2>
+<form id = "mainForm"action = "" method = "post" autocomplete = "on">
+
+<label for = "fname">First Name:</label>
+<input name = "fname type = "text" required>
+<br><br>
+<label for="lname">Last Name:</label>
+<input name = "lname" type="text">
+<br><br>
+<label for="email">Email:</label>
+<input name="email" type="email" autocomplete = "off" required>
+<br><br>
+<label for = "number">Phone Number:</label>
+<input name = "number" type = "tel" required>
+<br><br>
+<label for="comments">User Comments:</label>
+<textarea name = "comments" type = "text" cols = "50" rows = "4"></textarea>
+<br><br>
+
+
+<h2> Questionare</h2>
+<p>Do you prefer hot sandwitches or cold sandwitches?</p>
+<label><input type = "radio" name = "choice">Hot</label>
+<label><input type = "radio" name = "choice">Cold</label>
+<p>Click the sandwitches you like</p>
+<label><input type = "checkbox" name = "check">Meatball </label>
+<label><input type = "checkbox" name = "check">Italian</label>
+<label><input type = "checkbox" name = "check">Bufflo Chicken</label>
+<label><input type = "checkbox" name = "check">Ham and Swiss</label>
+<br><br>
+<label for = "city">Chose what city your from</label>
+<select name = "city">
+<option value = "chicago">Chicago</option>
+<option value = "new york">New York</option>
+<option value = "seattle">Seattle</option>
+<option value = "dallas">Dallas</option>
+</select>
+
+
+
+<h2>Enter your four-digit passcode, then click OK:</h2>
+<input id="id1" type="number" min="1000" max="9999">
+<button onclick= "myFunction()">OK</button>
+<p id="passcode"></p>
+<script>
+function myFunction() {
+var inpObj = document.getElementById("id1");
+if (inpObj.checkValidity() == false) {
+document.getElementById("passcode").innerHTML =
+inpObj.validationMessage;
+} else {
+document.getElementById("passcode").innerHTML = "Passcode Valid";
+}
+}
+</script>
+<br><br>
+<button type = "submit">Submit</button>
+<br>
+</form>
+
+
+
+</main>
+<footer><ul>
+<li><a href = "index.html">Home</a></li>
+<li><a href = "menu.html">Menu</a></li>
+
+<li><a href="history.html">History</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href = "chef.html">Meet Chef</a></li>
+<li><a href = "aboutus.html">About Us</a></li>
+<li><a href = "gallery.html">Gallery</a></li>
+
+</ul></footer>
+
+
+
+</body>
+
+</html>
